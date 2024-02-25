@@ -1,0 +1,8 @@
+# VScode settings
+.vscode
+# Environment variable file
+.env
+# Fresh build directory
+_fresh/
+# Node modules directory
+node_modules/
