@@ -10,6 +10,7 @@ import { suggest } from "$grammy/handlers/menus/suggest.ts";
 import { info } from "$grammy/handlers/menus/info.ts";
 import { contact } from "$grammy/handlers/menus/contact.ts";
 import { language } from "$grammy/handlers/menus/language.ts";
+import { WEBAPP_URL } from "$utils/constants.ts";
 
 // Root menu
 export const rootMenu = new Menu<GrammyContext>("root-menu")
@@ -45,6 +46,9 @@ export const rootMenu = new Menu<GrammyContext>("root-menu")
       await ctx.editMessageText(ctx.t("contact_header"));
     }
   )
+  .row()
+  .url("🇪🇺 Erasmus", WEBAPP_URL + "erasmus")
+  .url("❓ Faqs", "https://t.me/faqbiomedicapolito")
   .row()
   .submenu(
     (ctx) => ctx.t("root_info"),
