@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import { Group, Suggestion } from "$utils/db.ts";
-import { log } from "$grammy/logger.ts";
+import { announce, log } from "$grammy/logger.ts";
 
 export const handler: Handlers = {
   /**
@@ -28,6 +28,9 @@ export const handler: Handlers = {
 Suggestion approved by <b>${SuggestionData.approvedBy}</b>:
 <pre><code>${JSON.stringify(SuggestionData, null, 2)}</code></pre>
 <i>${SuggestionData.approvedAt.toLocaleString()}</i>`);
+    // announce to the public channel
+    await announce(`
+New group <a href='${SuggestionData.url}'>${SuggestionData.name}</a> added to the database! 🎉`);
     editedData.addedBy = SuggestionData.approvedBy;
     editedData.addedAt = SuggestionData.approvedAt;
     const newGroup = new Group(editedData);
