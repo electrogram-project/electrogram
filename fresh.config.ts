@@ -38,6 +38,7 @@ export default defineConfig({
             "message",
             "callback_query",
             "chat_member",
+            "inline_query",
           ],
           drop_pending_updates: true,
         });
