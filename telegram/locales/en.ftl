@@ -139,7 +139,7 @@ general_groups_m_header = 🧠 <b>Encephalogram</b>
 # Header
 suggest_header = 🧠 <b>Encephalogram</b>
         -- Menu suggestions
-        You may suggest a group by filling in the fields of the proposed form. An administrator will evaluate the request as soon as possible. If approved, you will see the addition announced in the main group.
+        You may suggest a group by filling in the fields of the proposed <a href="https://electrogram.deno.dev/suggest">form</a>. An administrator will evaluate the request as soon as possible. If approved, you will see the addition announced in the main group.
 
         <i>Open the form by clicking the button below:</i>
 # Buttons
@@ -162,7 +162,7 @@ info_header = 🧠 <b>Encephalogram</b>
 # Header
 contact_header = 🧠 <b>Encephalogram</b>
         -- Menu reports
-        If you have any suggestions or would like to participate in this project, please contact us via the form below.
+        If you have any suggestions or would like to participate in this project, please contact us via the form below or via the <a href="https://electrogram.deno.dev/contact">website</a>.
 
         <i>Open the form by clicking the button below:</i>
 # Buttons

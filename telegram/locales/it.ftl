@@ -137,7 +137,7 @@ general_groups_m_header = 🧠 <b>Encefalogramma</b>
 # Header
 suggest_header = 🧠 <b>Encefalogramma</b>
         -- Menu suggestions
-        È possibile proporre un gruppo compilando i campi del modulo di proposta. Un amministratore valuterà la richiesta il prima possibile. Se approvata, l'aggiunta sarà annunciata nel gruppo principale.
+        È possibile proporre un gruppo compilando i campi del <a href="https://electrogram.deno.dev/suggest">modulo</a>. Un amministratore valuterà la richiesta il prima possibile. Se approvata, l'aggiunta sarà annunciata nel gruppo principale.
         
         <i>Apri il modulo cliccando il pulsante sottostante:</i>
 
@@ -161,7 +161,7 @@ info_header = 🧠 <b>Encefalogramma</b>
 # Header
 contact_header = 🧠 <b>Encefalogramma</b>
         -- Menu contatti
-        Se hai suggerimenti oppure vuoi partecipare a questo progetto, contattaci attraverso il modulo sottostante.
+        Se hai suggerimenti oppure vuoi partecipare a questo progetto, contattaci attraverso il modulo sottostante o attraverso il <a href="https://electrogram.deno.dev/contact">sito</a>.
 
         <i>Apri il modulo cliccando il pulsate sottostante:</i>
 # Buttons
