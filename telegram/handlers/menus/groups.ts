@@ -96,6 +96,9 @@ export const courseGroups = new Menu<MyContext>("course_groups-menu")
       year: step[1],
       semester: step[2],
     });
+    // Sort groupsList alphabetically by the 'name' property
+    groupsList.sort((a, b) => a.name.localeCompare(b.name));
+
     const range = new MenuRange<MyContext>();
     if (groupsList.length === 0) {
       range.text(ctx.t("empty")).row();
@@ -130,6 +133,9 @@ export const generalGroups = new Menu<MyContext>("general_groups-menu")
       year: step[1],
       semester: 0,
     });
+    // Sort groupsList alphabetically by the 'name' property
+    groupsList.sort((a, b) => a.name.localeCompare(b.name));
+
     const range = new MenuRange<MyContext>();
     if (groupsList.length === 0) {
       range.text(ctx.t("empty")).row();
