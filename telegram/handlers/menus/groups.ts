@@ -101,7 +101,7 @@ export const courseGroups = new Menu<MyContext>("course_groups-menu")
       range.text(ctx.t("empty")).row();
     } else {
       for (const group of groupsList) {
-        if (!group.deleted) {
+        if (group.status !== "pending" && !group.deleted) {
           range.url(group["name"], group["url"]).row();
         }
       }
@@ -135,7 +135,7 @@ export const generalGroups = new Menu<MyContext>("general_groups-menu")
       range.text(ctx.t("empty")).row();
     } else {
       for (const group of groupsList) {
-        if (!group.deleted) {
+        if (group.status !== "pending" && !group.deleted) {
           range.url(group["name"], group["url"]).row();
         }
       }

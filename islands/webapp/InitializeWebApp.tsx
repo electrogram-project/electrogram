@@ -18,7 +18,6 @@ export default function InitializeWebApp() {
     if (webApp) {
       webApp.ready();
       webApp.onEvent("themeChanged", setThemeClass);
-      webApp.disableVerticalSwipes();
 
       fetchData("/webapp/api/validate", {
         method: "POST",
