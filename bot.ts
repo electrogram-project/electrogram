@@ -1,4 +1,4 @@
-import "$std/dotenv/load.ts";
+import "$std/dotenv/load";
 import { bot } from "telegram/bot.ts";
 import { listOfCommands } from "telegram/handlers/commands/mod.ts";
 

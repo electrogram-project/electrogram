@@ -40,7 +40,7 @@ import * as $webapp_InitializeWebApp from "./islands/webapp/InitializeWebApp.tsx
 import * as $webapp_PendingGroupsList from "./islands/webapp/PendingGroupsList.tsx";
 import * as $webapp_Success from "./islands/webapp/Success.tsx";
 import * as $webapp_SuggestForm from "./islands/webapp/SuggestForm.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

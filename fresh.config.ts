@@ -1,7 +1,7 @@
 import { defineConfig } from "$fresh/server.ts";
 import { bot } from "telegram/bot.ts";
 import { listOfCommands } from "telegram/handlers/commands/mod.ts";
-import { bold, yellow } from "$std/fmt/colors.ts";
+import { bold, yellow } from "$std/fmt/colors";
 import { IS_PRODUCTION, TELEGRAM_BOT_TOKEN } from "utils/constants.ts";
 import { WEBAPP_URL } from "utils/constants.ts";
 import twindPlugin from "$fresh/plugins/twindv1.ts";

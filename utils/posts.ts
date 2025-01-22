@@ -1,5 +1,5 @@
-import { extract } from "$std/front_matter/yaml.ts";
-import { join } from "$std/path/posix/mod.ts";
+import { extract } from "$std/front-matter/yaml";
+import { join } from "$std/path/posix";
 
 export type Post = {
   slug: string;
@@ -28,7 +28,10 @@ export async function getPost(
   directory: string,
 ): Promise<Post | null> {
   const text = await Deno.readTextFile(join(directory, `${slug}.md`));
-  const { attrs, body } = extract(text);
+  const { attrs, body } = extract(text) as {
+    attrs: { title: string; publishedAt: string; tags: string[] };
+    body: string;
+  };
   return {
     slug,
     title: attrs.title as string,

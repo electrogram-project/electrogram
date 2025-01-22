@@ -1,9 +1,13 @@
 import { FreshContext } from "$fresh/server.ts";
 import { webhookCallback } from "telegram/deps.ts";
 import { bot } from "telegram/bot.ts";
-import { TELEGRAM_BOT_TOKEN } from "utils/constants.ts";
+import { IS_PRODUCTION, TELEGRAM_BOT_TOKEN } from "utils/constants.ts";
 
-const handleUpdate = webhookCallback(bot!, "std/http");
+let handleUpdate: (req: Request) => Promise<Response>;
+
+if (IS_PRODUCTION) {
+  handleUpdate = webhookCallback(bot!, "std/http");
+}
 
 export const handler = async (req: Request, _ctx: FreshContext) => {
   try {

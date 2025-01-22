@@ -1,7 +1,7 @@
 import { computed, signal } from "@preact/signals";
 import { type Telegram, type WebAppInitData } from "utils/webapp/types.ts";
 
-export const newWindow = window as unknown as Window & { Telegram: Telegram };
+export const newWindow = globalThis as unknown as Window & { Telegram: Telegram };
 
 const telegramWindow = signal<Telegram>(newWindow.Telegram);
 

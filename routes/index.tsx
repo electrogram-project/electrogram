@@ -8,7 +8,7 @@ export default function Home() {
         title="Groups"
         text="This page lists all available groups. Use the search box to find a specific group."
       />
-      <Alert text="These links are provided as they are and we have no control over the external and abandoned groups nor do we know their content. If any abuse occurs in a group, please send a message via the contact page to request its removal from the list." />
+      <Alert text="These links are provided as they are and we have no control over them nor do we know their content. If any abuse occurs in a group, please send a message via the contact page to request its removal from the list." />
       <GroupsList />
       <div className="my-4 mx-4">
         <ul className="flex flex-col space-y-2 text-sm text-left">
@@ -20,7 +20,7 @@ export default function Home() {
               Managed
             </span>
             <span>
-              The group is managed by us.
+              The group is managed by someone we know.
             </span>
           </li>
           <li>
@@ -31,7 +31,7 @@ export default function Home() {
               External
             </span>
             <span>
-              The group is managed by someone else.
+              The group is managed by someone we don't know.
             </span>
           </li>
           <li>
